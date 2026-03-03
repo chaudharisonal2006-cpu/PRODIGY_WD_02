@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Main Container */
+.stopwatch-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Time Display */
+.display {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 30%;
+}
+
+/* Button Colors */
+.start {
+    background: #00c853;
+    color: white;
+}
+
+.stop {
+    background: #ff3d00;
+    color: white;
+}
+
+.reset {
+    background: #ffd600;
+}
+
+/* Hover Effects */
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
